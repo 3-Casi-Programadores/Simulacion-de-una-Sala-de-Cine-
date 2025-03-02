@@ -1,4 +1,4 @@
-# 📚 Sistema de Gestión de Estudiantes  
+# 📚 Sistema de Simulación de Sala de Cines
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/3-Casi-Programadores/Sistema-de-Gestion-de-Estudiantes)
 ![GitHub contributors](https://img.shields.io/github/contributors/3-Casi-Programadores/Sistema-de-Gestion-de-Estudiantes)
