@@ -1,18 +1,14 @@
 # 🧠 **Lógica del Proyecto**  
 
 ## 📌 1. Descripción  
-**Nombre del Proyecto:** [Nombre del Proyecto]  
-**Fecha:** [DD/MM/AAAA]  
-**Autor:** [Nombre del Asistente de Lógica]  
+**Nombre del Proyecto:** [Nombre del Proyect Sala de Cine]  
+**Autor:** [Nombre del Asistente de Lógica Carlos Campos]  
 
 📢 **Resumen:**  
-[Breve explicación del propósito del programa y qué problema resuelve.]  
+[Breve explicación del propósito del programa y qué problema]
 
----
 
-## 🔄 2. Flujo del Programa  
-1️⃣ [Paso 1: Explicar qué hace el programa primero]  
-2️⃣ [Paso 2: Explicar el siguiente paso lógico]  
+lógico]  
 3️⃣ [Paso 3: Continuar describiendo los pasos del programa]  
 4️⃣ [Paso 4: Explicar la salida final esperada]  
 
@@ -84,7 +80,4 @@
 ✏️ **Ejemplo:**  
 - Se puede mejorar el rendimiento usando `Math.round()` en la conversión de temperatura.  
 - Se recomienda usar `Scanner` para capturar la entrada del usuario.  
-
-
-
 
