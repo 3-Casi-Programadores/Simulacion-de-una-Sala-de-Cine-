@@ -2,8 +2,8 @@
 
 ## 📌 1. Descripción  
 **Nombre del Proyecto:** Simulador de Cine  
-**Fecha de Creación:** [DD/MM/AAAA]  
-**Autor(es):** [Nombre del encargado]  
+**Fecha de Creación:** [04-04-2025]  
+**Autor(es):** [Carlos Campos]  
 **Versión:** 1.0  
 
 📢 **Resumen:**  
