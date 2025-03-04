@@ -1,46 +1,36 @@
-# 📚 Sistema de Simulación de Sala de Cines
+# 🎬 **Sistema de Simulación de Sala de Cines**  
 
-![GitHub repo size](https://img.shields.io/github/repo-size/3-Casi-Programadores/Simulacion-de-una-Sala-de-Cine-)
-![GitHub contributors](https://img.shields.io/github/contributors/3-Casi-Programadores/Simulacion-de-una-Sala-de-Cine-)
-![GitHub last commit](https://img.shields.io/github/last-commit/3-Casi-Programadores/Simulacion-de-una-Sala-de-Cine-)
+![GitHub repo size](https://img.shields.io/github/repo-size/4-dEVS-UTH/Simulacion-de-una-Sala-de-Cine-)  
+![GitHub contributors](https://img.shields.io/github/contributors/4-dEVS-UTH/Simulacion-de-una-Sala-de-Cine-)  
+![GitHub last commit](https://img.shields.io/github/last-commit/4-dEVS-UTH/Simulacion-de-una-Sala-de-Cine-)  
 
+## 📌 **Descripción**  
+Este proyecto en **Java** simula una sala de cine donde varios clientes llegan al mismo tiempo para comprar boletos. El sistema permite:  
 
-## Descripción
+- Agregar clientes a la cola de espera.  
+- Atender clientes uno por uno en el mostrador.  
+- Simular un proceso concurrente donde varias personas intentan comprar al mismo tiempo.  
 
-Este proyecto es un sistema en Java que permite gestionar una lista de estudiantes y sus calificaciones. Permite realizar las siguientes acciones:
+## 👥 **Integrantes**  
+- Elis Gonzalez
+- Denis Colon  
+- Carlos Campos  
+- Uziel Alejandro  
 
-- Registrar un estudiante con su nombre y calificación.
-- Mostrar todos los estudiantes registrados.
-- Buscar estudiantes con calificaciones mayores o iguales a 80 utilizando Streams.
-- Eliminar un estudiante por su nombre.
+## 🔹 **Características**  
+- Uso de `Queue<String>` para manejar la cola de clientes.  
+- Uso de `Thread` y `ExecutorService` para simular atención concurrente.  
+- Implementación de `synchronized` para evitar conflictos al atender clientes.  
 
-## Integrantes
+## 💻 **Lenguaje de Programación**  
+<img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" width="100">  
 
-- Denis Colon
-- Carlos Campos
-- Uziel Alejandro
+## ⚙️ **Requisitos**  
+- JDK 8 o superior.  
+- Un IDE o terminal para ejecutar el programa.  
 
+## 🚀 **Instalación y Ejecución**  
 
-## Características
-
-- Uso de `HashMap<String, Integer>` para almacenar los estudiantes y sus calificaciones.
-- Uso de `ArrayList` para gestionar las listas de estudiantes.
-- Uso de `Streams` y `Lambda` para filtrar los estudiantes con calificaciones >= 80.
-- Interacción con el usuario mediante `Scanner`.
-
-## Lenguaje de Programación
-<img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" width="100">
-
-## Requisitos
-
-- JDK 8 o superior.
-- IDE o terminal para ejecutar el programa.
-
-## Instalación
-
-Para ejecutar este proyecto, sigue estos pasos:
-
-1. Clona el repositorio:
+1️⃣ **Clona el repositorio:**  
    ```bash
-   git clone https://github.com/3-Casi-Programadores/Sistema-de-Gestion-de-Estudiantes.git
-
+   git clone https://github.com/3-Casi-Programadores/Simulacion-de-una-Sala-de-Cine-.git
