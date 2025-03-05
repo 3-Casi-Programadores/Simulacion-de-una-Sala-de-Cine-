@@ -1,83 +1,63 @@
-# 🧠 **Lógica del Proyecto**  
+# 🎬 Lógica del Proyecto - Simulación de un Cine
 
-## 📌 1. Descripción  
-**Nombre del Proyecto:** [Nombre del Proyect Sala de Cine]  
-**Autor:** [Nombre del Asistente de Lógica Carlos Campos]  
+## 📌 1. Descripción
+**Nombre del Proyecto:** Simulación de Atención en un Cine  
+**Fecha de Creación:** 04-03-2025
+**Autor(es):** Carlos Campos  
+**Versión:** 1.0  
 
-📢 **Resumen:**  
-[Breve explicación del propósito del programa y qué problema]
-
-
-lógico]  
-3️⃣ [Paso 3: Continuar describiendo los pasos del programa]  
-4️⃣ [Paso 4: Explicar la salida final esperada]  
-
-📌 **Diagrama de flujo (Opcional):**  
-(Si el programa es complejo, se puede agregar un diagrama de flujo aquí.O sino borra esta seccion.)  
+📢 **Resumen:**
+Este programa simula la gestión de atención a clientes en un cine. Utiliza una cola de clientes y un sistema de ejecución con múltiples hilos para simular la compra de boletos de manera concurrente.
 
 ---
 
-## 🔧 3. Funciones Clave  
-📌 **Lista de funciones que el programador debe implementar:**  
+## 🛠 2. Requisitos
+📌 **Lenguaje de programación:** Java  
+📌 **Versión de Java recomendada:** Java 17  
+📌 **Dependencias necesarias:**
+- No se requieren librerías externas.  
 
-| Función | Entrada | Salida | Descripción |  
-|---------|--------|--------|-------------|  
-| `nombreFuncion1()` | [Tipo de dato] | [Tipo de dato] | [Explicación breve] |  
-| `nombreFuncion2()` | [Tipo de dato] | [Tipo de dato] | [Explicación breve] |  
-
-✏️ **Ejemplo:**  
-
-| Función | Entrada | Salida | Descripción |  
-|---------|--------|--------|-------------|  
-| `validarNumero(int num)` | Un número entero | `true` o `false` | Verifica si el número es positivo |  
-| `calcularResultado(int num)` | Un número entero validado | Número entero | Multiplica el número por 2 |  
+📌 **Herramientas recomendadas:**
+- IDE sugerido: IntelliJ IDEA, VS Code o Eclipse  
+- Compilador: `javac`  
 
 ---
 
-## 🔹 4. Reglas y Restricciones  
-📌 **Condiciones que el programador debe seguir:**  
-✅ [Regla 1: Explicar qué valores son válidos o inválidos]  
-✅ [Regla 2: Explicar si hay excepciones o errores que manejar]  
-✅ [Regla 3: Explicar si el programa debe seguir un formato específico]  
+## 🎭 3. Lógica de Implementación
 
-✏️ **Ejemplo:**  
-- El número ingresado debe ser **mayor que 0**.  
-- Si el usuario ingresa texto en vez de número, el programa debe **mostrar un mensaje de error**.  
-- El programa debe funcionar con **números enteros** únicamente.  
+### **1. Clase `Cine`**
+- Contiene una **cola de clientes** (`Queue<String>`) para gestionar el orden de atención.
+- Utiliza un **bloque de sincronización (`synchronized`)** para evitar condiciones de carrera entre múltiples hilos.
+- Métodos:
+  - `agregarCliente(String cliente)`: Agrega un cliente a la cola.
+  - `atenderCliente()`: Atiende a los clientes en orden de llegada, simulando el tiempo de espera.
 
----
+### **2. Clase `SimulacionCine`**
+- Es la clase principal del programa.
+- Solicita al usuario la **cantidad de clientes** y sus nombres mediante `JOptionPane`.
+- Utiliza **`ExecutorService` con un `ThreadPool` de 3 hilos** para atender a los clientes en paralelo.
+- Contiene la estructura de control para capturar excepciones y evitar entradas inválidas.
 
-## 📌 5. Ejemplo de Entrada y Salida  
-| Entrada | Salida  |  
-|---------|--------|  
-| [Ejemplo] | [Ejemplo] |  
-| [Ejemplo] | [Ejemplo] |  
-
-✏️ **Ejemplo para un programa de conversión de temperatura:**  
-
-| Entrada (°C) | Salida (°F) |  
-|-------------|------------|  
-| 0           | 32         |  
-| 100         | 212        |  
-| -40         | -40        |  
+### **3. Flujo del Programa**
+1. Se solicita al usuario la cantidad de clientes a atender.
+2. Se ingresan los nombres de los clientes (validando que no contengan números ni estén vacíos).
+3. Se agregan los clientes a la cola del cine.
+4. Se ejecutan **múltiples hilos** que procesan la atención de los clientes.
+5. Se muestra un mensaje indicando que el cliente ha comprado su boleto.
 
 ---
 
-## 🛠 6. Casos Especiales  
-📌 **Situaciones que el programador debe manejar:**  
-- **Caso 1:** [Descripción de un caso límite o posible error]  
-- **Caso 2:** [Descripción de otro caso especial]  
+## ⚙️ 4. Estructura de Datos
 
-✏️ **Ejemplo:**  
-- Si el usuario ingresa un número negativo, mostrar `"Número inválido"`.  
-- Si el usuario ingresa una letra en vez de número, mostrar `"Error: entrada inválida"`.  
+### **Clases Principales**  
+- `Cine`: Contiene la lógica de la cola de clientes y la simulación de la atención.
+- `SimulacionCine`: Ejecuta el programa y maneja la interacción con el usuario.
+
+### **Sincronización**  
+- Se utiliza un **bloque `synchronized`** para evitar accesos concurrentes a la cola de clientes.
+
+### **Manejo de Excepciones**  
+- Captura errores con `try-catch` al recibir datos de entrada.
 
 ---
-
-## 🔄 7. Notas Adicionales  
-📌 **Información extra para el programador (si aplica).**  
-
-✏️ **Ejemplo:**  
-- Se puede mejorar el rendimiento usando `Math.round()` en la conversión de temperatura.  
-- Se recomienda usar `Scanner` para capturar la entrada del usuario.  
 
